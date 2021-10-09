@@ -12,7 +12,6 @@ document.getElementById('button-search').addEventListener('click', function () {
 const displaySearchResult = meals => {
     const searchResults = document.getElementById('search-results');
     meals.forEach(meal => {
-        console.log(meal)
         const div = document.createElement('div');
         div.classList.add('col-md-3');
         div.innerHTML = `
