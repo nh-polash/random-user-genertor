@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(to right, #654ea3, #eaafc8);
+}
+
+main {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 22px;
+    padding: 0 200px;
+    color: #fff;
+    font-family: monospace;
+}
+
+@keyframes fadeIn {
+    
+}
+
+blockquote {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: left;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.3s ease;
+    background: #5D10E3;
+}
+
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+}   
+
+.fadeIn {
+    animation: fadeInLeft 0.5s ease-out;
+}
+
+.post-top {
+    width: 660px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+i.fas.fa-sync {
+    background: #0078D7;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: 0.7s all ease;
+}
+
+.post-top p {
+    padding: 0;
+}
+
+.span {
+    display: block;
+    text-align: right;
+    color: lightgrey;
+    margin-top: 20px;
+}
