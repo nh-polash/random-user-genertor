@@ -56,12 +56,12 @@ section {
     border: none;
     background-color: lightgrey;
     font-size: 20px;
-    padding: 10px 50px;
+    padding: 8px 16px;
     border-radius: 10px;
     margin-top: 20px;
 }
 
-.rotate:active {
+button:active .rotate {
     animation: rotate 0.5s ease infinite;
 }
 
