@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>The MealDB</title>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <header class="text-center text-info my-5">
+            <h1>Search your favorite food</h1>
+        </header>
+        <main>
+            <!-- search button and input -->
+            <section class="w-50 mx-auto">
+                <div class="input-group mb-3">
+                    <input id="search-input" type="text" class="form-control border border-info"
+                        placeholder="Search for a Meal...">
+                    <button class="btn btn-outline-info" type="button" id="button-search">
+                        <span>Search</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- search results -->
+            <section class="mt-5">
+                <div id="search-results" class="row row-cols-1 row-cols-md-3 g-4">
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
