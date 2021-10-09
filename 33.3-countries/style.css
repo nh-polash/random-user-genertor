@@ -5,11 +5,10 @@
 }
 
 body {
-    /* background: url(../img/Vanusa.jpg); */
     background-color: lightseagreen;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: #000;
     font-family: 'Fira Code', monospace;
 }
 
@@ -23,19 +22,54 @@ header h1 {
     margin-bottom: 15px;
 }
 
-
 section {
     padding: 20px 20px;
+}
+
+.container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr;
     grid-gap: 4em;
 }
 
-section img {
-    width: 100%;
+.countries {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
 }
 
-section div {
-    border: 1px solid linen;
-    padding: 5px;
+.countries div, .card {
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid rgba(0, 0, 0, 0.603);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-in;
+}
+.countries div:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h4, h5, p{
+    margin-bottom: 10px;
+}
+
+.countries div button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.card {
+    display: none;
+    position: fixed;
+    right: 5%;
+    height: 400px;
+}
+
+.card img {
+    width: 300px;
+    margin-bottom: 20px;
 }
